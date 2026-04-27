@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>kemuri</title>
+    <meta name="description" content="kemuri — windows internals, reverse engineering, low-level." />
+    <meta property="og:title" content="kemuri" />
+    <meta property="og:description" content="windows internals, reverse engineering, low-level." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0c0b10" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="hero">
+        <img class="avatar" src="./avatar.gif" alt="" width="56" height="56" />
+        <div class="hero-text">
+          <h1>
+            kemuri
+            <span class="status-dot" id="status-dot" data-status="offline" title="offline"></span>
+          </h1>
+          <p class="tagline">windows internals, reverse engineering, low-level.</p>
+        </div>
+      </header>
+
+      <section class="block">
+        <h2 class="kicker">about</h2>
+        <p>
+          18 anos. Gosto de programação, matemática, física e música.
+          Atualmente, foco em <em>Windows internals</em>, reverse engineering
+          e computer architecture. Bug bounty entra como hobby.
+        </p>
+      </section>
+
+      <section class="block">
+        <h2 class="kicker">stack</h2>
+        <dl class="stack">
+          <dt>main</dt>
+          <dd>Go, Python, Bash, PowerShell.</dd>
+
+          <dt>learning</dt>
+          <dd>C, Assembly x86_64, WinAPI, static reversing.</dd>
+
+          <dt>focus</dt>
+          <dd>Windows internals, low-level, computer architecture.</dd>
+        </dl>
+      </section>
+
+      <section class="block now" id="now-playing" hidden>
+        <h2 class="kicker">now playing</h2>
+        <a class="np-card" id="np-card" href="#" target="_blank" rel="noopener">
+          <img class="np-art" id="np-art" alt="" />
+          <div class="np-meta">
+            <span class="np-title" id="np-title"></span>
+            <span class="np-artist" id="np-artist"></span>
+            <span class="np-bar"><span id="np-progress"></span></span>
+          </div>
+        </a>
+      </section>
+
+      <section class="block">
+        <h2 class="kicker">links</h2>
+        <ul class="links">
+          <li>
+            <a href="https://x.com/kemuriwso" target="_blank" rel="noopener me">
+              <span class="lk">twitter</span><span class="hd">@kemuriwso</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://app.intigriti.com/profile/kemuri_" target="_blank" rel="noopener me">
+              <span class="lk">intigriti</span><span class="hd">kemuri_</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="discord-link" data-copy="kemuri1337">
+              <span class="lk">discord</span><span class="hd" id="discord-handle">kemuri1337</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="foot">
+        <span id="foot-status">offline</span>
+        <span>© <span id="year"></span></span>
+      </footer>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

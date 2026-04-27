@@ -1,0 +1,29 @@
+# os
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# env / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# build / deps (caso um dia mude pra astro/next)
+node_modules/
+dist/
+.cache/
+
+# logs
+*.log
+
+# arquivos de perfil que não devem ir junto com a landing
+profile-README.md
+profile-readme.md
